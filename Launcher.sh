@@ -30,7 +30,7 @@ ________________________________________________________________________
 '
 read -p 'Souhaitez-vous:
 1.Créer votre serveur
-2.Installer des Pluginslugins sur votre serveur
+2.Installer des Plugins sur votre serveur
 
 Mon choix [1-2] : ' choix
 if [ $choix == "2" ]
