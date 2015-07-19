@@ -20,11 +20,11 @@ clear
 echo -e $BLEU McServerMaker : PluginUtils$NORMAL
 echo -e $BLEU Veuillez écrire le nom de votre plugin sans majuscules$NORMAL
 read -p 'Quel plugin voulez vous télécharger ? : ' plugin
-mkdir "$plugin"
-cd "$plugin"
+cd Spigot
+cd plugins
 wget http://api.bukget.org/3/plugins/bukkit/"$plugin"/latest/download
-mv download "$plugin"
+mv download "$plugin".jar
 cd ..
 clear
-echo -e $BLEU Terminé :$NORMAL
- 
+echo -e $BLEU Terminé !$NORMAL
+echo -e $BLEU Il faut redémarrer le serveur $NORMAL
