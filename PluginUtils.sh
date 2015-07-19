@@ -17,8 +17,8 @@ JAUNE="\\033[1;33m"
 CYAN="\\033[1;36m"
 #Téléchargement du plugin
 clear
-echo -e $BLEU McServerMaker : PluginUtils$NORMAL
-echo -e $BLEU Veuillez écrire le nom de votre plugin sans majuscules$NORMAL
+echo -e "$BLEU McServerMaker : PluginUtils$NORMAL"
+echo -e "$BLEU Veuillez écrire le nom de votre plugin sans majuscules$NORMAL"
 read -p 'Quel plugin voulez vous télécharger ? : ' plugin
 cd Spigot
 cd plugins
