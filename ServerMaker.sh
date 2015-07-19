@@ -16,11 +16,11 @@ BLANCLAIR="\\033[1;08m"
 JAUNE="\\033[1;33m" 
 CYAN="\\033[1;36m"
 clear
-echo -e $BLEU Téléchargement...
+echo -e $BLEU Téléchargement de spigot 1.7.10 ...
 mkdir Spigot
 cd Spigot
-wget http://getspigot.org/spigot/spigot-1.7.10-R0.1-SNAPSHOTBuild1544.jar
-wget http://www.freevip.ovh/owncloud/index.php/s/iPdLvLPlVfm0uMr/download
+wget -q http://getspigot.org/spigot/spigot-1.7.10-R0.1-SNAPSHOTBuild1544.jar
+wget -q http://www.freevip.ovh/owncloud/index.php/s/iPdLvLPlVfm0uMr/download
 clear
 mv download eula.txt
 mv spigot-1.7.10-R0.1-SNAPSHOTBuild1544.jar spigot.jar
