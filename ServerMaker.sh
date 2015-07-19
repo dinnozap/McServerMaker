@@ -24,6 +24,8 @@ wget http://www.freevip.ovh/owncloud/index.php/s/iPdLvLPlVfm0uMr/download
 clear
 mv download eula.txt
 mv spigot-1.7.10-R0.1-SNAPSHOTBuild1544.jar spigot.jar
-echo -e Lancement du serveur... $NORMAL
+echo -e "L'IP de votre serveur est... $BLEU"
+curl ifconfig.me
+echo -e $BLEU screen -r pour acceder a la console $NORMAL
+echo -e $NORMAL Lancement du serveur... $NORMAL
 screen -dmS minecraft java -Xms1024M -Xmx1024M -jar spigot.jar nogui
-
