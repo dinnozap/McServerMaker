@@ -3,9 +3,9 @@
 #|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 #||||||||||||||||||||McServerMaker||||||||||||||||||||||||||||||||||||||
 #|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-#________________________________________________________________________
-#Couleurs
+#_______________________________________________________________________
 
+#Couleurs
 VERT="\\033[1;32m" 
 NORMAL="\\033[0;39m" 
 ROUGE="\\033[1;31m" 
@@ -18,16 +18,27 @@ CYAN="\\033[1;36m"
 chmod 777 StartServer.sh
 chmod 777 ServerMaker.sh
 chmod 777 Plugins.sh
-read -p 'Que voulez vous faire ? MakeServer/StartServer/Plugins : ' faire
-if [ $faire == "Plugins" ]
+echo -e $BLEU '
+________________________________________________________________________
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||McServerMaker|||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+________________________________________________________________________
+
+
+
+'
+read -p 'Souhaitez-vous:
+1.Créer votre serveur
+2.Installer des Pluginslugins sur votre serveur
+
+Mon choix [1-2] : ' choix
+if [ $choix == "2" ]
 then
 	sh Plugins.sh
-elif [ $faire == "StartServer" ]
-then
-	sh StartServer.sh
-elif [ $faire == "MakeServer" ]
+elif [ $choix == "1" ]
 then
 	sh ServerMaker.sh
 else
-	echo -e $BLEU Commande inconnue, réessayez en réecrivant la commande avec exactitude$NORMAL
+	echo -e $BLEU 'Commande inconnue, réessayez en réecrivant la commande avec exactitude'$NORMAL
 fi
