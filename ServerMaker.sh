@@ -29,3 +29,4 @@ curl ifconfig.me
 echo -e $BLEU screen -r pour acceder a la console $NORMAL
 echo -e $NORMAL Lancement du serveur... $NORMAL
 screen -dmS minecraft java -Xms1024M -Xmx1024M -jar spigot.jar nogui
+echo -e $BLEU Terminé ! $NORMAL
