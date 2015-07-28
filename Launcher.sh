@@ -30,7 +30,6 @@ then
 	sh ServerMaker.sh
 elif [ $faire == "Extentions" ]
 then
-        mkdir extentions
 	cd extentions
 	clear
 	echo -e "$ROUGE/!\ $BLEU si il n'est rien écrit c'est que vous n'avez pas encore installés d'extentions $NORMAL $ROUGE/!\ "
